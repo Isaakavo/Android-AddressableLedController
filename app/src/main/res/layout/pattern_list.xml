@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="1dp"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            style="@style/AppTheme"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/patternID"
+                style="@style/titleFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pattern" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="titleFont">
+        <item name="android:fontFamily">@font/quantico_bold</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="descriptionFont">
+        <item name="android:fontFamily">@font/quantico</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WS2812BLedController</string>
+    <string name="refresh">Refresh</string>
+    <string name="device_name">Device Name</string>
+    <string name="device_address">Device Address</string>
+    <string name="pattern">Pattern</string>
+</resources>
