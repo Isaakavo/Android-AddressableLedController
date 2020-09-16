@@ -311,7 +311,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onStopTrackingTouch(SeekBar seekBar) {
 
     }
-    `//Function to get "Rainbow" colors, returns an array of RGB
+    //Function to get "Rainbow" colors, returns an array of RGB
     //Position- Use it to get diferrent colors  
     //Tono- Get different color tones
     //flags- use them to send different kind of commands
