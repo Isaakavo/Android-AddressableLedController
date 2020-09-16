@@ -11,8 +11,4 @@ public class ListPatterns {
     public String getPatternName() {
         return patternName;
     }
-
-    public void setPatternName(String patternName) {
-        this.patternName = patternName;
-    }
 }

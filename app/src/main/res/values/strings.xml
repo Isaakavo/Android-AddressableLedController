@@ -1,7 +1,26 @@
 <resources>
-    <string name="app_name">WS2812BLedController</string>
+    <string name="app_name">LedController</string>
     <string name="refresh">Refresh</string>
     <string name="device_name">Device Name</string>
     <string name="device_address">Device Address</string>
     <string name="pattern">Pattern</string>
+    <string name="unknown">Unknown</string>
+
+    <!--    Main activity messages-->
+    <string name="connected">Connected</string>
+    <string name="not_connected">Not connected</string>
+    <string name="connecting">Connecting</string>
+    <!-- Patterns names   -->
+    <string name="meteor">Color Wipe</string>
+    <string name="breathing">Fade In</string>
+    <string name="catch_up">Patron 3</string>
+    <string name="cyclone_bounce">Cyclone Bounce</string>
+    <string name="fixed">Twinkle</string>
+    <string name="flash">Running Lights</string>
+    <string name="turn_off">Turn Off</string>
+    <string name="static_rainbow">Theater Chase</string>
+    <string name="running_lights">Meteor rain</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="rainbow">Rainbow</string>
+    <string name="police">Police</string>
 </resources>

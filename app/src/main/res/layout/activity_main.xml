@@ -7,145 +7,206 @@
 
     tools:context=".MainActivity">
 
-    <ProgressBar
-        android:id="@+id/connectingID"
-        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hapticFeedbackEnabled="false"
-        android:indeterminate="false"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="invisible" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pattern_list"
-        android:layout_width="411dp"
-        android:layout_height="454dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/color3ID"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/color1ID"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="14dp"
         android:background="@color/button1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pattern_list"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <Button
         android:id="@+id/color2ID"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="14dp"
         android:background="@color/button2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/color1ID"
         app:layout_constraintTop_toBottomOf="@+id/pattern_list"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <Button
         android:id="@+id/color3ID"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="14dp"
         android:background="@color/button3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/color2ID"
-        app:layout_constraintTop_toBottomOf="@+id/pattern_list"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
 
     <Button
         android:id="@+id/color4ID"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="14dp"
         android:background="@color/button4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/color3ID"
         app:layout_constraintTop_toBottomOf="@+id/pattern_list"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <Button
         android:id="@+id/color5ID"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="16dp"
         android:background="@color/button5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/color4ID"
         app:layout_constraintTop_toBottomOf="@+id/pattern_list"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/colorSeekBarID"
         style="@style/Widget.AppCompat.SeekBar"
-        android:layout_width="350dp"
+        android:layout_width="330dp"
         android:layout_height="40dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
+        android:max="1530"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/color3ID"
         app:layout_constraintVertical_bias="0.0" />
 
     <SeekBar
-        android:id="@+id/seekBar2"
-        android:layout_width="350dp"
+        android:id="@+id/saturationID"
+        android:layout_width="330dp"
         android:layout_height="40dp"
+        android:max="35"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias=".56"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/colorSeekBarID"
         app:layout_constraintVertical_bias="0.0" />
 
     <SeekBar
-        android:id="@+id/seekBar3"
-        android:layout_width="350dp"
+        android:id="@+id/timeSeekBarID"
+        android:layout_width="330dp"
         android:layout_height="40dp"
+        android:max="150"
+        android:min="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias=".56"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar2"
+        app:layout_constraintTop_toBottomOf="@+id/saturationID"
         app:layout_constraintVertical_bias="0.0" />
 
     <SeekBar
-        android:id="@+id/seekBar4"
-        android:layout_width="350dp"
+        android:id="@+id/brightnessID"
+        android:layout_width="330dp"
         android:layout_height="40dp"
+        android:max="100"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias=".56"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar3"
+        app:layout_constraintTop_toBottomOf="@+id/timeSeekBarID"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/statusID"
+        style="@style/titleFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unknown"
+        app:layout_constraintBottom_toTopOf="@+id/pattern_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/colorSeekBarID"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color1ID"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rgb" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saturationID"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/saturation" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/timeSeekBarID"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@drawable/clock" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/brightnessID"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0"
+        app:srcCompat="@drawable/brignthness" />
+
+    <Switch
+        android:id="@+id/rainbowID"
+        style="@style/titleFont"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/rainbow"
+        app:layout_constraintBottom_toTopOf="@+id/pattern_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/statusID"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
 </androidx.constraintlayout.widget.ConstraintLayout>

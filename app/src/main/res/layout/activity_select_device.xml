@@ -20,11 +20,11 @@
 
     <Button
         android:id="@+id/refreshButton"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:textColor="@color/textColor"
+        style="@android:style/Widget.Material.Button"
         android:layout_width="276dp"
         android:layout_height="50dp"
         android:text="@string/refresh"
+        android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
